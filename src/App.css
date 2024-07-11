@@ -1,0 +1,97 @@
+/* Import the 'Playfair Display SC' font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading styles */
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 200;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Column width styles */
+th:nth-child(1), td:nth-child(1) { width: 10%; } /* Name */
+th:nth-child(2), td:nth-child(2) { width: 10%; } /* Cuisine */
+th:nth-child(3), td:nth-child(3) { width: 10%; } /* Image */
+th:nth-child(4), td:nth-child(4) { width: 30%; } /* Ingredients */
+th:nth-child(5), td:nth-child(5) { width: 30%; } /* Preparation */
+th:nth-child(6), td:nth-child(6) { width: 10%; } /* Rating */
+th:nth-child(7), td:nth-child(7) { width: 10%; } /* Delete */
+
+
+/* Adjusting items in the table */
+.recipe-list table th,
+.recipe-list table td {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.recipe-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-list {
+    width: 95%; /* Adjust the width as needed */
+}
+
+.recipe-list table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* Center align table cells */
+}
+
+.recipe-list table td button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Zebra striping styles */
+tbody tr:nth-child(odd) {
+    background-color: #fffacd; /* Light yellow color */
+}
+
+/* Scrollbar styles */
+.content_td p {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.no-resize {
+    resize: none;
+}
+
+/* Image styles */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
